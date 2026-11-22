@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Coolum Seafoods | Seafood &amp; Takeaway in Coolum Beach, QLD</title>
+<meta name="description" content="Coolum Seafoods at 3/1788 David Low Way, Coolum Beach. Dine-in, outdoor seating and online ordering via Uber Eats and DoorDash.">
+<meta property="og:title" content="Coolum Seafoods | Coolum Beach, QLD">
+<meta property="og:description" content="Fresh seafood, coastal flavour, local favourites. View the menu and order online.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0b2a43">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0b2a43;--teal:#0e7c86;--bg:#fbf8f2;--surf:#fff;--sand:#f3ecdf;--tx:#14263a;--mut:#4d5f70;--acc:#b8482b;--ln:#e2d9c8;--lk:#0a6169;--amb:#8a4b00;--hf:'Fraunces',Georgia,serif;--bf:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0a1f31;--surf:#10304a;--sand:#0e2840;--tx:#eef3f6;--mut:#b4c4d0;--acc:#f08a68;--ln:#24465f;--lk:#6fd0d8;--amb:#f2b36b;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0a1f31;--surf:#10304a;--sand:#0e2840;--tx:#eef3f6;--mut:#b4c4d0;--acc:#f08a68;--ln:#24465f;--lk:#6fd0d8;--amb:#f2b36b;color-scheme:dark}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:calc(76px + env(safe-area-inset-top,0px));scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--tx);font:400 1rem/1.6 var(--bf);-webkit-text-size-adjust:100%}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--navy);z-index:60}
+img,svg{max-width:100%}
+a{color:var(--lk)}
+h1,h2,h3{font-family:var(--hf);line-height:1.15;margin:0 0 .5em}
+h2{font-size:clamp(1.7rem,4.2vw,2.5rem)}
+.wrap{width:min(1120px,100% - 2.5rem);margin-inline:auto}
+.skip{position:absolute;left:-999px;top:0;background:#fff;color:#000;padding:.7rem 1rem;z-index:100}
+.skip:focus{left:.5rem;top:.5rem}
+:focus-visible{outline:3px solid #f2b36b;outline-offset:3px}
+.eyebrow{font:600 .8rem/1 var(--bf);letter-spacing:.14em;text-transform:uppercase;color:var(--acc);margin:0 0 .9rem}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;min-height:48px;padding:.7rem 1.35rem;border-radius:3px;font:600 1rem var(--bf);text-decoration:none;border:2px solid transparent;cursor:pointer}
+.b1{background:var(--teal);color:#fff}.b1:hover{background:#0a6169}
+.b2{border-color:#fff;color:#fff;background:transparent}.b2:hover{background:rgba(255,255,255,.12)}
+.bu{background:#0a0a0a;color:#fff}.bu:hover{background:#262626}
+.bd{background:#c41200;color:#fff}.bd:hover{background:#a30f00}
+.bo{border-color:var(--lk);color:var(--lk);background:transparent}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:70;background:var(--navy);color:#fff;border-bottom:1px solid rgba(255,255,255,.12)}
+.hd{display:flex;align-items:center;justify-content:space-between;min-height:68px;gap:1rem}
+.brand{display:flex;align-items:center;gap:.7rem;color:#fff;text-decoration:none;font:700 1.2rem var(--hf)}
+.brand svg{width:26px;height:30px;color:#f3ecdf}
+nav ul{list-style:none;margin:0;padding:0;display:flex;gap:.25rem;align-items:center}
+nav a{color:#fff;text-decoration:none;padding:.6rem .75rem;display:block;font-weight:500;font-size:.95rem;border-bottom:2px solid transparent}
+nav a:hover{border-color:#5fc7cf}
+.tg{display:none;background:none;border:2px solid rgba(255,255,255,.5);color:#fff;border-radius:3px;min-height:44px;padding:0 .9rem;font:600 .95rem var(--bf);cursor:pointer}
+@media (max-width:900px){.tg{display:block}nav{position:absolute;left:0;right:0;top:100%;background:var(--navy);display:none;border-top:1px solid rgba(255,255,255,.12)}nav.open{display:block}nav ul{flex-direction:column;align-items:stretch;padding:.5rem 1.25rem 1rem}nav a{padding:.9rem .25rem;border-bottom:1px solid rgba(255,255,255,.1)}}
+.hero{background:linear-gradient(160deg,#0b2a43 0%,#0a4a5a 100%);color:#fff;padding:clamp(2.5rem,7vw,5.5rem) 0}
+.hg{display:grid;gap:2.5rem;align-items:center}
+@media (min-width:880px){.hg{grid-template-columns:1.1fr .9fr}}
+.hero h1{font-size:clamp(2.2rem,6vw,3.8rem);margin-bottom:.4em}
+.hero h1 span{color:#8fdde3;display:block}
+.hero p.lead{font-size:1.15rem;max-width:34em;color:#d8e6ee;margin:0 0 1.6rem}
+.cta{display:flex;flex-wrap:wrap;gap:.75rem}
+.meta{margin-top:1.8rem;display:flex;flex-wrap:wrap;gap:.5rem 1.5rem;font-size:.95rem;color:#c3d6e0}
+.meta a{color:#fff}
+.ph{position:relative;aspect-ratio:4/5;max-height:520px;width:100%;border:1px solid rgba(255,255,255,.25);background:linear-gradient(180deg,#0e7c86,#0b2a43);display:grid;place-items:center;overflow:hidden}
+.ph svg.w{position:absolute;inset:auto 0 0 0;width:100%;opacity:.25}
+.ph svg.lg{width:46%;color:#f3ecdf;position:relative}
+.ph small{position:absolute;left:1rem;right:1rem;bottom:.9rem;font-size:.8rem;color:#d8e6ee;text-align:center}
+section{padding:clamp(3rem,7vw,5.5rem) 0}
+.sand{background:var(--sand)}
+.intro{max-width:42rem;color:var(--mut);margin-bottom:2rem}
+.note{border-left:4px solid var(--amb);background:var(--surf);padding:.8rem 1rem;font-size:.92rem;color:var(--mut);margin:0 0 1.6rem}
+.tabs{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:1rem}
+.tab{min-height:46px;padding:.5rem 1.1rem;border:2px solid var(--navy);background:transparent;color:var(--tx);font:600 .95rem var(--bf);border-radius:3px;cursor:pointer}
+.tab[aria-selected="true"]{background:var(--navy);color:#fff}
+@media (prefers-color-scheme:dark){.tab{border-color:#5fc7cf}.tab[aria-selected="true"]{background:#5fc7cf;color:#0a1f31}}
+.chips{position:sticky;top:calc(68px + env(safe-area-inset-top,0px));z-index:20;background:var(--bg);display:flex;gap:.4rem;overflow-x:auto;padding:.6rem 0;margin-bottom:1rem;border-bottom:1px solid var(--ln)}
+.chip{flex:none;min-height:40px;padding:.3rem .9rem;border:1px solid var(--ln);background:var(--surf);color:var(--tx);border-radius:999px;font:500 .9rem var(--bf);cursor:pointer}
+.chip:hover{border-color:var(--teal)}
+.cat{margin:2rem 0 0;scroll-margin-top:140px}
+.cat h3{font-size:1.45rem;border-bottom:2px solid var(--teal);padding-bottom:.35rem}
+.items{list-style:none;margin:0;padding:0;display:grid;gap:0 2.5rem}
+@media (min-width:760px){.items{grid-template-columns:1fr 1fr}}
+.it{padding:.8rem 0;border-bottom:1px dashed var(--ln)}
+.row{display:flex;justify-content:space-between;gap:1rem;font-weight:600}
+.pr{font-variant-numeric:tabular-nums;color:var(--lk);white-space:nowrap}
+.ds{margin:.2rem 0 0;color:var(--mut);font-size:.92rem}
+.ox{margin:.35rem 0 0;display:flex;flex-wrap:wrap;gap:.3rem}
+.x{font-size:.78rem;padding:.1rem .5rem;border:1px solid var(--ln);border-radius:3px;color:var(--mut)}
+.x.df{border-color:var(--amb);color:var(--amb);font-weight:600}
+.leg{font-size:.85rem;color:var(--mut)}
+.fg{display:grid;gap:1rem;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));margin-top:2rem}
+.fc{background:var(--surf);border:1px solid var(--ln);overflow:hidden}
+.fc .im{height:110px;background:linear-gradient(135deg,#0e7c86,#0b2a43);display:grid;place-items:center;color:#f3ecdf}
+.fc .im svg{width:34px;opacity:.9}
+.fc div.bd2{padding:.9rem 1rem}
+.fc h3{font-size:1.15rem;margin:0}
+.fc p{margin:.2rem 0 0;font-size:.88rem;color:var(--mut)}
+.xmas{background:var(--navy);color:#fff;text-align:center}
+.xmas .wrap{max-width:46rem}
+.xmas p{color:#d8e6ee;font-size:1.1rem}
+.xmas .eyebrow{color:#f2b36b}
+.sg{display:grid;gap:2.5rem}
+@media (min-width:820px){.sg{grid-template-columns:1.2fr .8fr}}
+.tick{list-style:none;padding:0;margin:0;display:grid;gap:.6rem}
+.tick li{background:var(--surf);border:1px solid var(--ln);padding:.9rem 1rem;font-weight:500}
+.cg{display:grid;gap:2.5rem}
+@media (min-width:820px){.cg{grid-template-columns:1fr 1fr}}
+address{font-style:normal;font-size:1.1rem}
+table{border-collapse:collapse;width:100%;max-width:26rem}
+th,td{text-align:left;padding:.45rem .2rem;border-bottom:1px solid var(--ln);font-size:.95rem}
+footer{background:var(--navy);color:#c3d6e0;padding:2.5rem 0;font-size:.92rem}
+footer a{color:#fff}
+.fr{display:flex;flex-wrap:wrap;gap:1.5rem 3rem;justify-content:space-between}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+<symbol id="logo" viewBox="0 0 214 240"><rect x="4" y="0" width="18" height="62" rx="9" fill="currentColor"/><rect x="36" y="0" width="18" height="62" rx="9" fill="currentColor"/><rect x="68" y="0" width="18" height="62" rx="9" fill="currentColor"/><path fill="currentColor" d="M4 55H86V70C86 88 70 92 60 98C56 100 56 104 56 110V240H34V110C34 104 34 100 30 98C20 92 4 88 4 70Z"/><path fill="currentColor" fill-rule="evenodd" d="M160 8C196 36 210 100 210 135C210 172 190 196 172 206L192 240L160 222L128 240L148 206C130 196 110 172 110 135C110 100 124 36 160 8ZM149 62a11 11 0 1 0 22 0a11 11 0 1 0 -22 0Z"/></symbol>
+</defs></svg>
+<a class="skip" href="#main">Skip to main content</a>
+<header>
+<div class="wrap hd">
+<a class="brand" href="#home" aria-label="Coolum Seafoods home"><svg aria-hidden="true"><use href="#logo"/></svg>Coolum Seafoods</a>
+<button class="tg" id="tg" aria-expanded="false" aria-controls="nav">Menu</button>
+<nav id="nav" aria-label="Main">
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#menu">Menu</a></li>
+<li><a href="#fresh">Fresh Seafood</a></li>
+<li><a href="#christmas">Christmas Pre-orders</a></li>
+<li><a href="#story">Our Story</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+</div>
+</header>
+<main id="main">
+<section class="hero" id="home" style="padding-top:clamp(2.5rem,7vw,5.5rem)">
+<div class="wrap hg">
+<div>
+<p class="eyebrow" style="color:#f2b36b">Coolum Beach, Queensland</p>
+<h1>Fresh Seafood. <span>Coastal Flavour. Local Favourites.</span></h1>
+<p class="lead">Dine in, enjoy the outdoor seating, or order online. Fish, calamari, burgers, breakfast and more from Coolum Seafoods on David Low Way.</p>
+<div class="cta">
+<a class="btn b1" href="#menu">View Menu</a>
+<a class="btn bu" href="https://www.ubereats.com/au/store/coolum-seafoods/5n1GjGC3VBCL9GRkiKt5iw/b0a7b57c-c91f-4750-aa1e-4a62732f4afc?ps=1" target="_blank" rel="noopener noreferrer">Order on Uber Eats<span class="sr" style="position:absolute;left:-999px"> (opens in a new tab)</span></a>
+<a class="btn bd" href="https://www.doordash.com/en/store/coolum-seafoods-coolum-beach-28104727/44786370/" target="_blank" rel="noopener noreferrer">Order on DoorDash<span style="position:absolute;left:-999px"> (opens in a new tab)</span></a>
+</div>
+<p class="meta"><span>Dine-in</span><span>Outdoor seating</span><a href="tel:+61754462000">(07) 5446 2000</a></p>
+</div>
+<div class="ph" role="img" aria-label="Photography placeholder with the Coolum Seafoods fork and fish logo">
+<svg class="w" viewBox="0 0 400 120" preserveAspectRatio="none" aria-hidden="true"><path fill="#fff" d="M0 40C50 10 100 10 150 40S250 70 300 40 370 20 400 40V120H0Z"/></svg>
+<svg class="lg" viewBox="0 0 214 240" aria-hidden="true"><use href="#logo"/></svg>
+<small>Photo placeholder. Approved Coolum Seafoods photography to be added.</small>
+</div>
+</div>
+</section>
+
+<section id="menu">
+<div class="wrap">
+<p class="eyebrow">The Menu</p>
+<h2>Browse the menu</h2>
+<p class="intro">Choose a menu version, then jump to a category. Where an item appears on more than one menu, the other menu’s price is shown beneath it.</p>
+<p class="note"><strong>Concept preview:</strong> three menu versions were supplied and are shown exactly as supplied. Prices are not yet confirmed as current. Descriptions appear for featured items, breakfast, fish and burgers.</p>
+<div class="tabs" role="tablist" aria-label="Menu version" id="tabs"></div>
+<p class="leg"><span class="x df">Amber tag</span> = the same item is listed at a different price on another menu.</p>
+<div class="chips" id="chips" role="navigation" aria-label="Menu categories"></div>
+<div id="panel" role="tabpanel" tabindex="0"></div>
+</div>
+</section>
+
+<section id="fresh" class="sand">
+<div class="wrap">
+<p class="eyebrow">Fresh Seafood</p>
+<h2>From the fish menu</h2>
+<p class="intro">Fish listed across our menus. Crumbed, battered or grilled where noted on the menu.</p>
+<div class="fg">
+<div class="fc"><div class="im"><svg viewBox="0 0 214 240" aria-hidden="true"><use href="#logo"/></svg></div><div class="bd2"><h3>Barramundi</h3><p>On the menu</p></div></div>
+<div class="fc"><div class="im"><svg viewBox="0 0 214 240" aria-hidden="true"><use href="#logo"/></svg></div><div class="bd2"><h3>Hoki</h3><p>On the menu</p></div></div>
+<div class="fc"><div class="im"><svg viewBox="0 0 214 240" aria-hidden="true"><use href="#logo"/></svg></div><div class="bd2"><h3>Snapper</h3><p>On the menu</p></div></div>
+<div class="fc"><div class="im"><svg viewBox="0 0 214 240" aria-hidden="true"><use href="#logo"/></svg></div><div class="bd2"><h3>Salmon</h3><p>On the menu</p></div></div>
+<div class="fc"><div class="im"><svg viewBox="0 0 214 240" aria-hidden="true"><use href="#logo"/></svg></div><div class="bd2"><h3>Mooloolaba Flake</h3><p>On the breakfast menu</p></div></div>
+<div class="fc"><div class="im"><svg viewBox="0 0 214 240" aria-hidden="true"><use href="#logo"/></svg></div><div class="bd2"><h3>Cod</h3><p>On the menu</p></div></div>
+<div class="fc"><div class="im"><svg viewBox="0 0 214 240" aria-hidden="true"><use href="#logo"/></svg></div><div class="bd2"><h3>Sweet Lip</h3><p>On the breakfast menu</p></div></div>
+</div>
+<p style="margin-top:1.5rem"><a class="btn bo" href="#menu">See fish prices on the menu</a></p>
+</div>
+</section>
+
+<section id="christmas" class="xmas">
+<div class="wrap">
+<p class="eyebrow">Christmas Pre-orders</p>
+<h2>Christmas seafood, sorted</h2>
+<p>Planning your Christmas seafood feast? Christmas pre-order details coming soon.</p>
+<p style="margin-top:1.5rem"><a class="btn b2" href="tel:+61754462000">Call (07) 5446 2000</a></p>
+</div>
+</section>
+
+<section id="story">
+<div class="wrap sg">
+<div>
+<p class="eyebrow">Our Story</p>
+<h2>Our story, coming soon</h2>
+<p class="intro" style="margin-bottom:0">Concept placeholder: the Coolum Seafoods story will be shared here once it has been supplied by the business.</p>
+</div>
+<ul class="tick" aria-label="What you can expect">
+<li>Dine-in</li>
+<li>Outdoor seating</li>
+<li>Online ordering via Uber Eats and DoorDash</li>
+</ul>
+</div>
+</section>
+
+<section id="contact" class="sand">
+<div class="wrap cg">
+<div>
+<p class="eyebrow">Contact</p>
+<h2>Visit Coolum Seafoods</h2>
+<address>
+<strong>Coolum Seafoods</strong><br>
+3/1788 David Low Way<br>
+Coolum Beach, QLD 4573<br>
+Australia<br><br>
+Phone: <a href="tel:+61754462000">(07) 5446 2000</a>
+</address>
+<p><a href="https://www.google.com/maps/search/?api=1&amp;query=3%2F1788+David+Low+Way+Coolum+Beach+QLD+4573" target="_blank" rel="noopener noreferrer">Get directions (opens in a new tab)</a></p>
+<div class="cta" style="margin-top:1.2rem">
+<a class="btn bu" href="https://www.ubereats.com/au/store/coolum-seafoods/5n1GjGC3VBCL9GRkiKt5iw/b0a7b57c-c91f-4750-aa1e-4a62732f4afc?ps=1" target="_blank" rel="noopener noreferrer">Order on Uber Eats<span style="position:absolute;left:-999px"> (opens in a new tab)</span></a>
+<a class="btn bd" href="https://www.doordash.com/en/store/coolum-seafoods-coolum-beach-28104727/44786370/" target="_blank" rel="noopener noreferrer">Order on DoorDash<span style="position:absolute;left:-999px"> (opens in a new tab)</span></a>
+</div>
+</div>
+<div>
+<h3>Opening hours</h3>
+<table>
+<caption class="leg" style="text-align:left;padding-bottom:.5rem">Provisional, pending confirmation</caption>
+<tbody>
+<tr><th scope="row">Monday</th><td>8:30 AM – 7:00 PM</td></tr>
+<tr><th scope="row">Tuesday</th><td>8:30 AM – 7:00 PM</td></tr>
+<tr><th scope="row">Wednesday</th><td>8:30 AM – 7:00 PM</td></tr>
+<tr><th scope="row">Thursday</th><td>8:30 AM – 7:00 PM</td></tr>
+<tr><th scope="row">Friday</th><td>8:30 AM – 7:00 PM</td></tr>
+<tr><th scope="row">Saturday</th><td>8:30 AM – 7:00 PM</td></tr>
+<tr><th scope="row">Sunday</th><td>8:30 AM – 7:00 PM</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+</main>
+<footer>
+<div class="wrap fr">
+<div><p class="brand" style="margin:0 0 .5rem"><svg aria-hidden="true"><use href="#logo"/></svg>Coolum Seafoods</p>3/1788 David Low Way, Coolum Beach, QLD 4573<br><a href="tel:+61754462000">(07) 5446 2000</a></div>
+<div><a href="https://www.ubereats.com/au/store/coolum-seafoods/5n1GjGC3VBCL9GRkiKt5iw/b0a7b57c-c91f-4750-aa1e-4a62732f4afc?ps=1" target="_blank" rel="noopener noreferrer">Uber Eats</a><br><a href="https://www.doordash.com/en/store/coolum-seafoods-coolum-beach-28104727/44786370/" target="_blank" rel="noopener noreferrer">DoorDash</a></div>
+<div>Website concept by ORBIT.<br>Menu, hours and imagery pending client approval.</div>
+</div>
+</footer>
+<script>
+var MENUS=[
+{id:'a',label:'Breakfast',cats:[
+['Breakfast',`Bacon and Egg|12.67|Crispy bacon served with eggs.
+Two Bacon and Two Eggs|17.95|Two eggs, two rashers of bacon or two sausages, and toast. Choice of fried, scrambled or poached eggs.
+Croissants with Jam|6.86|Flaky pastry paired with sweet jam.
+Grilled with Ham and Cheese|12.14|Ham and cheese combined in a grilled delight.
+The Little Kahuna|17.50|One sausage, one rasher bacon, one fried egg, one roasted tomato, toast and marmalade.
+Baked Beans with Toast|11.09|Hearty beans in tomato sauce served with toast.
+Spaghetti with Toast|11.09|Spaghetti served with toast.
+Raisin Toast|7.13|Sweet raisins on toasted bread.
+Eggs Benny|20.06|Poached eggs on toasted English muffins topped with ham.
+The Big Kahuna|21.50|Two sausages, two rashers bacon, two fried eggs, two roasted tomatoes, toast and marmalade.`],
+['Featured Items',`Fisherman's Basket for One|35.50|One fillet cod, two prawn cutlets, two sea bites, eight calamari strips, chips, lemon and tartare sauce.
+Family Pack|73.92|Four fish, four seafood sticks, small calamari, medium chips and sauce or gravy.
+Fisherman's Basket for Two|70.00|Two fillet cod, four prawn cutlets, four sea bites, fifteen calamari strips, chips, lemon and tartare sauce.`],
+['Fish',`Barramundi|15.00|Choice of crumbed, battered or grilled.
+Hoki|13.97|Choice of crumbed, battered or grilled.
+Snapper|15.00|Red snapper, crumbed, battered or grilled.
+Salmon|16.40|Choice of crumbed, battered or grilled.
+Fish Bites|2.11|Crispy bites of fish.
+Mooloolaba Flake|15.31|Locally caught Mooloolaba flake.
+Cod|13.40|Choice of crumbed, battered or grilled.
+Sweet Lip|14.26|Choice of crumbed, battered or grilled.`],
+['Burgers',`Fish Burger|13.73|Crispy fish fillets, lettuce, tomato and beetroot on a sesame seed bun.
+Steak Works Burger|20.60|Steak patty with bacon, fried egg, cheese, beetroot, tomato and lettuce.
+Chicken Burger|14.26|Chicken breast pieces, salad, mayonnaise, salt and pepper.
+Hawaiian Burger|15.20|Beef patty topped with ham and pineapple.
+Veggie Burger (V)|14.00|Vegetable-based patty in a burger bun.
+Bacon and Egg Burger|13.73|Crispy bacon and a fried egg on a burger bun.
+Hamburgers|13.73|Beef patty with bacon, fried egg, pineapple, beetroot, lettuce, tomato and onion.
+Steak Burger|18.30|Juicy beef patty in a burger.`],
+['Sandwiches',`Prawn Roll|14.26
+Salad Sandwich|9.50
+Ham, Cheese and Tomato Toastie|12.14
+Bacon, Lettuce and Tomato Sandwich|12.14
+Buttered Roll|3.17
+Cheese and Tomato Sandwich|10.03
+Buttered Bread|3.00
+Ham with Salad Sandwich|13.20
+Chicken with Salad Sandwich|13.00`],
+['Snacks',`Battered Sav|5.28
+Potato Wedges|8.45
+Calamari|10.03
+Seafood Stick|2.64
+Oysters|4.22
+Fish Cakes|5.28
+Crumbed Sausage|5.28
+Spring Roll|3.17
+Chicken Chips|9.50
+Chicken Nugget|2.11
+Chicken Schnitzel|10.56
+Dim Sims|3.17
+Potato Scallops|2.11
+Potato Gems|7.92
+Pineapple Fritter|3.70
+Hash Brown|3.25
+Corn Jack|4.75
+Prawn Cutlets|3.17`],
+['Chips',`Chips (Breakfast)|7.00
+Loaded Fries|11.62`],
+['Takeaway Menu',`Chiko Roll|4.75
+Sea Bites|3.70
+Sea Scallop|4.65
+Kabana|4.75
+Sour Cream|2.11`],
+['Hot Beverages',`Cappuccino|5.81
+Hot Chocolate|5.81
+Latte|5.81
+Macchiato|5.81
+Tea|5.81
+Take Away Coffee|5.28
+Flat White|5.81
+Long Black|6.00`],
+['Cold Beverages',`Milkshake|9.73
+Iced Coffee|10.56
+Iced Chocolate|10.56`],
+['Sauces',`Tartare Sauce|2.11
+Tomato Sauce|3.00
+Thousand Island|2.11
+Sweet Chilli Sauce|2.11
+Squeeze on Sauce|0.85
+Pickled Onion Sauce|0.32`],
+['Extras',`Bacon Rasher|3.70
+Sausage|3.70
+Egg|3.70
+Sauce|3.00
+Tomatoes|2.64
+Mushrooms|3.79
+Baked Beans and Spaghetti|4.10`]]},
+{id:'b',label:'All Day',cats:[
+['Featured Items',`Fisherman's Basket for One|35.50|One fillet cod, two prawn cutlets, two sea bites, eight calamari strips, chips, lemon and tartare sauce.
+Family Pack|78.94|Four cod, four seafood sticks, medium calamari, medium chips and sauce or gravy.
+Fisherman's Basket for Two|70.00|Two fillet cod, four prawn cutlets, four sea bites, fifteen calamari strips, chips, lemon and tartare sauce.`],
+['Fish',`Barramundi|15.19|Delicate fish with a mild flavour.
+Snapper|15.19|Delicate fish fillet, expertly prepared.
+Hoki|13.97|Delicate fish fillet.
+Fish Bites|1.85|Crispy bites of fish.
+Salmon|16.40|Flaky fish with a delicate flavour.
+Cod|13.97|Flaky white fish.`],
+['Burgers',`Chicken Burger|15.50|Chicken breast pieces with choice of salad, mayonnaise, salt and pepper.
+Hamburger Works|17.62|Beef patty, bacon, fried egg, pineapple, beetroot, lettuce, tomato and onion.
+Fish Burger|14.57|Crispy fish fillets with lettuce, tomato and beetroot on a sesame seed bun.
+Hot Dog|12.14|Grilled sausage in a soft bun.
+Hawaiian Burger|15.19|Beef patty topped with ham and pineapple.
+Steak Works Burger|21.86|Beef steak burger with classic toppings.
+Veggie Burger (V)|14.57|Vegetable patty in a burger.
+Hot Dog Works|13.97|Hot dog in a toasted buttered hot dog roll.
+Bacon and Egg Burger|14.57|Beef patty topped with bacon and a fried egg.
+Hamburger|14.57|Beef patty, bacon, fried egg, pineapple, beetroot, lettuce, tomato and onion.
+Steak Burger|17.62|Juicy beef patty in a burger.`],
+['Sandwiches',`Ham with Salad Sandwich|12.76
+Salad Sandwich|10.20
+Buttered Roll|2.43
+Prawn Roll|15.19
+Cheese and Tomato Sandwich|10.00
+Ham, Cheese and Tomato Toastie|12.14
+Bacon, Lettuce and Tomato Sandwich|12.76
+Buttered Bread Sandwich|2.43
+Chicken Salad Sandwich|13.50`],
+['Snacks',`Potato Wedges|8.45
+Battered Sav|4.86
+Calamari|10.03
+Chicken Chips|8.51
+Potato Scallops|1.82
+Seafood Stick|1.82
+Dim Sims|2.90
+Fish Cakes|5.28
+Crumbed Sausage|4.86
+Pineapple Fritter|3.04
+Oysters|4.22
+Spring Roll|2.43
+Chicken Nugget|1.22
+Chicken Schnitzel|8.51
+Potato Gems|6.08
+Corn Jack|4.25
+Hash Brown|3.25
+Prawn Cutlets|3.65`],
+['Chips',`Chips|6.86
+Cheese Loaded Fries|13.20`],
+['Takeaway Menu',`Chiko Roll|4.25
+Sea Bites|3.04
+Sea Scallop|4.65
+Kabana|4.25
+Pineapple Fritter|3.04
+Hash Brown|3.25
+Com Jack|3.65
+Sour Cream|2.43
+Potato Gems|6.08`],
+['Hot Beverages',`Cappuccino|5.47
+Latte|5.47
+Hot Chocolate|6.08
+Macchiato|5.47
+Take Away Coffee|5.47
+Long Black|6.00
+Flat White|5.47
+Tea|5.47`],
+['Cold Beverages',`Milkshake|9.72
+Iced Coffee|10.33
+Iced Chocolate|10.33`],
+['Extras',`Sauces|2.43
+Bacon|1.82
+Pineapple|1.82
+Egg|3.04
+Cheese|1.82`]]},
+{id:'c',label:'Breakfast All Day',cats:[
+['Breakfast',`Bacon and Eggs|17.62|Two eggs, two rashers bacon or two sausages and toast. Choice of fried, scrambled or poached eggs.
+Bacon and Egg|17.50|Crispy bacon served with two eggs and two pieces of white toast.
+The Little Kahuna|17.62|One sausage, one rasher bacon, one fried egg, one roasted tomato, toast and marmalade.
+Baked Beans with Toast|10.33|Hearty beans served with toasted bread.
+Spaghetti with Toast|11.50|Spaghetti served with two pieces of white toast.
+Raisin Toast|6.68|Sweet raisins on toasted bread.
+Croissants|6.08|Served with jam.
+Grilled with Ham and Cheese|12.14|Ham and cheese grilled until melted.
+Eggs Benny|22.00|Poached eggs on toasted English muffins with bacon and hollandaise sauce.
+The Big Kahuna|21.25|Two sausages, two rashers bacon, two fried eggs, two roasted tomatoes, toast and marmalade.`],
+['Sauces',`Tartare Sauce|2.43
+Tomato Sauce|3.00
+Thousand Island|2.43
+Sweet Chilli Sauce|2.43
+Squeeze on Sauce|0.85
+Pickled Onion|1.00`],
+['Extras',`Bacon|3.65
+Sausage|3.65
+Tomatoes|2.43
+Egg|3.65
+Sauces|2.43
+Mushrooms|3.65
+Baked Beans and Spaghetti|4.10`]]}
+];
+var AL={'chips (breakfast)':'chips','hamburgers':'hamburger','croissants with jam':'croissants','buttered bread':'buttered bread sandwich','chicken with salad sandwich':'chicken salad sandwich','loaded fries':'cheese loaded fries','sauce':'sauces','pickled onion sauce':'pickled onion','bacon rasher':'bacon','two bacon and two eggs':'bacon and eggs'};
+function nk(n){n=n.toLowerCase();return AL[n]||n}
+function fm(s){return s.replace(/'/g,'\u2019')}
+var idx={};
+MENUS.forEach(function(m){idx[m.id]={};m.cats=m.cats.map(function(c){var its=c[1].split('\n').map(function(l){var p=l.split('|');return{n:p[0],p:p[1],d:p[2]||''}});its.forEach(function(i){idx[m.id][nk(i.n)]=idx[m.id][nk(i.n)]||i});return{t:c[0],i:its}})});
+var cur='a',tabs=document.getElementById('tabs'),chips=document.getElementById('chips'),panel=document.getElementById('panel');
+function slug(s){return s.toLowerCase().replace(/[^a-z]+/g,'-')}
+function render(){
+tabs.innerHTML=MENUS.map(function(m){return '<button role="tab" class="tab" id="t-'+m.id+'" aria-selected="'+(m.id===cur)+'" aria-controls="panel" tabindex="'+(m.id===cur?0:-1)+'" data-id="'+m.id+'">'+m.label+'</button>'}).join('');
+var m=MENUS.filter(function(x){return x.id===cur})[0];
+panel.setAttribute('aria-labelledby','t-'+cur);panel.id='panel';
+chips.innerHTML=m.cats.map(function(c){return '<button class="chip" type="button" data-t="c-'+cur+'-'+slug(c.t)+'">'+c.t+'</button>'}).join('');
+panel.innerHTML=m.cats.map(function(c){return '<div class="cat" id="c-'+cur+'-'+slug(c.t)+'"><h3>'+c.t+'</h3><ul class="items">'+c.i.map(function(i){
+var ox=MENUS.filter(function(o){return o.id!==cur}).map(function(o){var h=idx[o.id][nk(i.n)];return h?'<span class="x'+(h.p!==i.p?' df':'')+'">'+o.label+' $'+h.p+(h.p!==i.p?' (differs)':'')+'</span>':''}).join('');
+return '<li class="it"><div class="row"><span>'+fm(i.n)+'</span><span class="pr">$'+i.p+'</span></div>'+(i.d?'<p class="ds">'+fm(i.d)+'</p>':'')+(ox?'<div class="ox"><span class="leg">Also on:</span>'+ox+'</div>':'')+'</li>'}).join('')+'</ul></div>'}).join('')}
+tabs.addEventListener('click',function(e){var b=e.target.closest('.tab');if(b){cur=b.dataset.id;render();document.getElementById('t-'+cur).focus()}});
+tabs.addEventListener('keydown',function(e){var k=e.key,ids=MENUS.map(function(m){return m.id}),i=ids.indexOf(cur);if(k==='ArrowRight')i=(i+1)%ids.length;else if(k==='ArrowLeft')i=(i+ids.length-1)%ids.length;else return;e.preventDefault();cur=ids[i];render();document.getElementById('t-'+cur).focus()});
+chips.addEventListener('click',function(e){var b=e.target.closest('.chip');if(b)document.getElementById(b.dataset.t).scrollIntoView({behavior:matchMedia('(prefers-reduced-motion:reduce)').matches?'auto':'smooth'})});
+var tg=document.getElementById('tg'),nav=document.getElementById('nav');
+tg.addEventListener('click',function(){var o=nav.classList.toggle('open');tg.setAttribute('aria-expanded',o)});
+nav.addEventListener('click',function(e){if(e.target.tagName==='A'){nav.classList.remove('open');tg.setAttribute('aria-expanded','false')}});
+render();
+</script>
+</body>
+</html>
